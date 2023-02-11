@@ -1,17 +1,19 @@
-.gambi{
+
+.header-bg{
     height: 83.4px;
     background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 435345;
 }
 .header{
     max-width: 1200px;
     height: 83.4px;
     margin: 0 auto;
 }
-.header2{
+.header-conteudo{
     width: 100%;
     max-width: inherit;
     padding: 20px;
@@ -22,7 +24,6 @@
     position: fixed;
     top: 0;
     background-color: #fff;
-    z-index: 2;
 }
 
 .header-menu{
