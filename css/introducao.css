@@ -67,6 +67,7 @@
 @media (max-width:470px){
     .introducao{
         grid-template-columns: 1fr;
+        margin-top: 130px;
         justify-items: center;
     }
     .introducao img{
