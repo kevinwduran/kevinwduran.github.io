@@ -48,6 +48,7 @@
     .introducao{
         grid-template-columns: 1fr 1fr;
         gap: 40px;
+        margin-top: 80px;
     }
     .introducao h1{
         font-size: 2rem;

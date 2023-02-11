@@ -43,22 +43,19 @@
 }
 
 @media (max-width: 800px){
-    .header2{
+    .header-conteudo{
         display: flex;
         flex-direction: column;
         gap: 40px;
         padding: 20px;
     }
-    .header2 img{
+    .header-conteudo img{
         place-self: center;
     }
     .header-menu{
         justify-content: center;
     }
-    .gambi{
-        display: none;
-    }
-    .header2 a{
+    .header-conteudo a{
         background-color: #f5f5f5;
         border-radius: 5px;
     }
