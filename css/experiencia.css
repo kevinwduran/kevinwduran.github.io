@@ -34,6 +34,10 @@
     gap: 10px 40px;
 }
 
+.empresa:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .empresa::before{
     content: "";
     position: absolute;
@@ -48,7 +52,7 @@
 .empresa-ano{
     position: absolute;
     top: 22px;
-    left: -70px;
+    left: -90px;
     color: #525252;
     font-size: 0.825rem;
 }
@@ -66,12 +70,18 @@
 }
 
 .empresa-habilidades{
+
     font-size: 0.875rem;
     line-height: 1.4rem;
     padding: 5px 10px;
     background-color: #fff;
     border-radius: 5px;
     place-self: start;
+}
+
+.container-habilidades{
+    display: grid;
+    grid-template-columns: 2fr;
 }
 
 @media (max-width:850px){
