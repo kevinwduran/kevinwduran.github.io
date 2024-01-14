@@ -36,7 +36,28 @@
     justify-content: end;
 }
 
+.header-menu li {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Para esconder o overflow do pseudo-elemento ao começar a transição */
+}
 
+.header-menu li::before {
+    content: "";
+    display: block;
+    width: 0; /* Largura desejada */
+    height: 5px;
+    background: #DC7515;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%); /* Para centralizar horizontalmente */
+    transition: width 0.3s ease; /* Adiciona uma transição apenas para width */
+}
+
+.header-menu li:hover::before {
+    width: 100px; /* Quando hover, a largura do pseudo-elemento se torna 0 */
+}
 .header-menu a{
     font-size: 1.125rem;
     text-decoration: none;
