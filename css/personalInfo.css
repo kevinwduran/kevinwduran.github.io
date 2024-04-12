@@ -1,0 +1,16 @@
+.personal-info-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin-bottom: 4rem;
+}
+
+.personal-info-content h2 {
+  margin-bottom: 2rem;
+}
+
+.personal-info-content .info-text{
+  max-width: 50rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}

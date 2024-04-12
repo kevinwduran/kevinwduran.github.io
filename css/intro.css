@@ -7,14 +7,15 @@
 
 .intro-content h1 {
   font-size: 3.5rem;
+  line-height: 1.5;
 }
 
 .intro-content p {
-  max-width: 500px;
+  max-width: 31.25rem;
 }
 
 .intro .img-intro {
-  width: 500px;
+  width: 31.25rem;
   display: grid;
   justify-content: end;
 }
