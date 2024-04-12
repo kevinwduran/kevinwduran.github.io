@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  margin-bottom: 4rem;
 }
 
 .personal-info-content h2 {
