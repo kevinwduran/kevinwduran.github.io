@@ -1,0 +1,11 @@
+footer {
+  background-color: #fff;
+  max-height: 25rem;
+}
+
+.footer-content {
+  border-top: 2px solid var(--gray-color);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 80px 0px;
+}

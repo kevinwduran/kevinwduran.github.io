@@ -1,0 +1,78 @@
+#qualifications {
+  background-color: var(--gray-color);
+  padding: 4rem;
+}
+.quali {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.quali h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.quali-text {
+  grid-column: 1;
+  font-size: 2rem;
+}
+
+.college-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.college {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+}
+
+.college::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  background: #46A2E5;
+  left: -5px;
+  top: 20px;
+  display: block;
+}
+
+.college-name{
+  text-transform: uppercase;
+}
+
+.college-course {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.extra{
+  margin-top: 3rem;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.courses:not(:last-child){
+  margin-bottom: 2rem;
+}
+
+.courses i{
+  color: var(--primary-color);
+}
+
+.courses h3{
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
