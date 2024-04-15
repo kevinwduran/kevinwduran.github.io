@@ -23,6 +23,7 @@ img{
   --font-color: #0f172a;
   --primary-color: #4f46e5;
   --gray-color: #E5E7ED;
+  --second-gray-color: #c1c5ce;
 }
 
 body {
@@ -57,3 +58,6 @@ ul, li {
   list-style: none;
 }
 
+section {
+  padding-top: 2rem;
+}
