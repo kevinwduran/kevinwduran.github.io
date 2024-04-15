@@ -39,3 +39,11 @@ footer {
 .footer-contact li:not(:last-child) {
   border-bottom: 2px solid var(--gray-color);
 }
+
+/* responsivo */
+@media (max-width: 768px) {
+  .footer-content {
+    margin: 0rem 2rem;
+    grid-template-columns: 1fr;
+  }
+}

@@ -9,6 +9,7 @@
 .exp h2{
   grid-column: 1 / -1;
   font-size: 2rem;
+  text-align: center;
 }
 
 .prod-exp-content {
@@ -63,4 +64,36 @@
 
 h4 {
   font-weight: bold;
+}
+
+/* responsivo */
+@media (max-width: 1000px) {
+  .exp {
+    margin: 0rem 2rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .prod-exp-content {
+    width: 25rem;
+  }
+  .prod-exp-content:first-of-type::before {
+    display: none;
+  }
+  .company-year {
+    left: 1rem;
+    top: 1rem;
+    margin-bottom: .5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .prod-exp-content {
+    width: auto;
+    margin: 1rem auto;
+    box-shadow: none;
+    border: 2px solid var(--gray-color);
+    padding: 4rem 2rem 2rem 2rem;
+  }
 }
