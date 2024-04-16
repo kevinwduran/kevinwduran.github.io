@@ -46,4 +46,7 @@ footer {
     margin: 0rem 2rem;
     grid-template-columns: 1fr;
   }
+  .footer-contact {
+    margin: 3rem 0;
+  }
 }

@@ -92,6 +92,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  #qualifications {
+    margin-top: -2rem;
+  }
+  .extra{
+    margin-bottom: 3rem;
+  }
+}
+
 @media (max-width: 550px) {
   .college-list  {
     margin: 0rem 2rem;
