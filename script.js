@@ -21,6 +21,7 @@ function openMenu() {
 function closeMenu() {
   nav_ul.classList.remove("open");
 }
+// add
 open.addEventListener("click", openMenu);
 close.addEventListener("click", closeMenu);
 
