@@ -1,0 +1,109 @@
+#qualifications {
+  background-color: var(--gray-color);
+  margin-top: -5rem;
+}
+
+.quali {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.quali h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.quali-text {
+  grid-column: 1;
+  font-family: 'Bungee', Arial, sans-serif;
+  font-size: 9rem;
+  line-height: 1;
+  color: var(--second-gray-color);
+}
+
+.college-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.college {
+  background-color: var(--primary-color);
+  list-style: none;
+  color: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+}
+
+.college::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  background: #46A2E5;
+  left: -5px;
+  top: 20px;
+  display: block;
+}
+
+.college-name{
+  text-transform: uppercase;
+}
+
+.college-course {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.extra{
+  margin-top: 3rem;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.courses:not(:last-child){
+  margin-bottom: 2rem;
+}
+
+.courses i{
+  color: var(--primary-color);
+}
+
+.courses h3{
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+/* responsivo */
+@media (max-width: 1000px) {
+  .quali {
+    margin: 0rem 2rem;
+    grid-template-columns: 1fr;
+  }
+  .quali-text {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #qualifications {
+    margin-top: -2rem;
+  }
+  .extra{
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .college-list  {
+    margin: 0rem 2rem;
+    grid-template-columns: 1fr;
+  }
+}

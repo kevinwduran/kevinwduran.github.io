@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+h2, h1, h3, p, ul, li, a, span, svg {
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+:root {
+  --font-color: #0f172a;
+  --primary-color: #4f46e5;
+  --gray-color: #E5E7ED;
+  --second-gray-color: #c1c5ce;
+}
+
+body {
+  color: var( --font-color);
+  font-family: 'Fira Sans', Arial, sans-serif;
+  background: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+main {
+  padding-top: 4rem;
+}
+
+h1, h2 {
+  font-family: 'Bungee', Arial, sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: var(--font-color);
+}
+
+ul, li {
+  list-style: none;
+}
+
+section {
+  padding-top: 2rem;
+}
+
+/* Animation showRight */
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-show-right {
+  animation: show-right 1s forwards;
+}
