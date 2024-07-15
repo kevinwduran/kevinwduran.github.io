@@ -4,6 +4,7 @@ import Link from "next/link";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import Socials from "./Socials";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -11,9 +12,7 @@ const Header = () => {
       <div className="fixed  container mx-auto flex justify-between items-center xl:max-w-[18%] xl:flex-col xl:justify-start xl:items-start xl:min-h-screen xl:ml-10 xl:gap-12 xl:border-r xl:border-primary/10">
         {/* logo */}
         <Link href="/">
-          <h1 className="text-4xl font-semibold xl:mt-12">
-            Kevin<span className="text-accent">.</span>
-          </h1>
+          <Image className="xl:mt-12" src="/assets/Vector.svg" width="60" height="25" />
         </Link>
 
         {/* desktop nav (>1200px) & curriculo */}

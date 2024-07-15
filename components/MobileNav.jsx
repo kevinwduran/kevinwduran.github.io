@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import Socials from "./Socials";
+import Image from "next/image";
 
 const links = [
   {
@@ -34,11 +35,14 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div className="mt-1 mb-20 text-2xl">
+        <div className="mb-20 text-2xl border-b pb-4 mt-2">
           <Link href="/">
-            <h1 className="text-3xl font-semibold border-b pb-4">
-              Kevin<span className="text-accent">.</span>
-            </h1>
+            <Image
+              className=""
+              src="/assets/Vector.svg"
+              width="50"
+              height="25"
+            />
           </Link>
         </div>
 

@@ -19,44 +19,55 @@ const projects = [
   {
     num: "01",
     icon: <FaGithub />,
-    category: "Front-End",
-    title: "project 1",
-    description: "kskssksksks",
+    category: "Design e Programação Web",
+    title: "Meu Portfólio Pessoal",
+    description:
+      "Portfólio pessoal onde consegui colocar em prática os conhecimentos adquiridos de Design e de Programação Web. O projeto foi feito desde o protótipo (Figma) até o código.",
+    stack: [
+      {
+        name: "Next JS",
+      },
+      {
+        name: "Tailwind CSS",
+      },
+      {
+        name: "Figma",
+      },
+      {
+        name: "Illustrator",
+      },
+    ],
+    image: "/assets/portfolio.png",
+    live: "",
+    website: "https://github.com/kevinwduran/kevinwduran.github.io",
+  },
+  {
+    num: "02",
+    icon: <FaGithub />,
+    category: "UI Design e Programação Web",
+    title: "Sistema Ferragens Negrão",
+    description:
+      "Projeto acadêmico em parceria com a Ferragens Negrão, desenvolvendo um sistema completo de controle de remanufatura. Meu papel incluiu a prototipagem do sistema, assegurando a identidade visual da marca e aplicando princípios de UI/UX Design para garantir usabilidade tanto em dispositivos móveis quanto em desktop. Também fui responsável pela programação front-end do projeto.",
     stack: [
       {
         name: "HTML 5",
       },
       {
         name: "CSS 3",
+      },
+      {
+        name: "Bootstrap",
       },
       {
         name: "JavaScript",
       },
-    ],
-    image: "/next.svg",
-    live: "",
-    website: "",
-  },
-  {
-    num: "02",
-    icon: <FaBehance />,
-    category: "UI Design",
-    title: "project 2",
-    description: "kskssksksks",
-    stack: [
       {
-        name: "HTML 5",
-      },
-      {
-        name: "CSS 3",
-      },
-      {
-        name: "ReactJS",
+        name: "Figma",
       },
     ],
-    image: "/next.svg",
+    image: "",
     live: "",
-    website: "",
+    website: "https://github.com/kevinwduran/Sistema-Ferragens-negrao/tree/main",
   },
 ];
 
@@ -73,19 +84,23 @@ const Projetos = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-8 items-center">
           <div className="xl:justify-between w-full">
-            <div className="flex flex-col gap-8 h-[50%]">
+            <div className="flex flex-col gap-4 h-[50%]">
               {/* outline num */}
-              <div className="text-8xl leading-none font-bold text-outline text-transparent">
-                {project.num}
+              <div className="flex justify-between items-center">
+                <div className="text-8xl leading-none font-bold text-outline text-transparent">
+                  {project.num}
+                </div>
+                <p className="text-primary/50">{project.category}</p>
               </div>
+
               {/* project category */}
-              <h2 className="text-[42px] font-bold leading-none group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category}
+              <h2 className="text-3xl font-bold leading-none group-hover:text-accent transition-all duration-500 capitalize">
+                {project.title}
               </h2>
               {/* description */}
               <p className="text-primary/80">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-2">
+              <ul className="gap-2 flex flex-wrap">
                 {project.stack.map((item, index) => (
                   <li
                     key={index}
@@ -113,7 +128,7 @@ const Projetos = () => {
                   </TooltipProvider>
                 </Link>
                 {/* live project github / behance */}
-                <Link href={project.website}>
+                <Link href={project.website} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-primary/10 flex justify-center items-center group">
@@ -139,7 +154,7 @@ const Projetos = () => {
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-red-600">
+                  <div className="h-[460px] relative group flex justify-center items-center bg-white">
                     {/* overlay */}
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     {/* image */}
@@ -147,7 +162,7 @@ const Projetos = () => {
                       <Image
                         src={project.image}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                         alt=""
                       />
                     </div>

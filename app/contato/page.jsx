@@ -40,7 +40,7 @@ const Contato = () => {
         <div className="flex flex-col gap-[30px] xl:flex-row xl:ml-8">
           {/* form */}
           <div className="xl:h-[54px] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-6 border border-[#e9e9e9] rounded-lg md:min-w-[40rem]">
+            <form action="https://getform.io/f/arolnypb" method="POST" className="flex flex-col gap-6 p-6 border border-[#e9e9e9] rounded-lg md:min-w-[40rem]">
               <h3 className="text-3xl text-accent font-semibold">
                 Vamos conversar?
               </h3>
@@ -57,11 +57,14 @@ const Contato = () => {
                     <Input
                       id={dado.title}
                       type={dado.type}
+                      name={dado.title}
                       placeholder={dado.placeholder}
                     />
                   </div>
                 ))}
                 <Textarea
+                  name='comment'
+                  id='comment'
                   className="h-[100px] mt-2 resize-none"
                   placeholder="Insira sua mensagem aqui."
                 />
