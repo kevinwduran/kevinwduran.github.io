@@ -65,7 +65,7 @@ const projects = [
         name: "Figma",
       },
     ],
-    image: "",
+    image: "/assets/apresentação login mobile.jpg",
     live: "",
     website: "https://github.com/kevinwduran/Sistema-Ferragens-negrao/tree/main",
   },
@@ -156,7 +156,7 @@ const Projetos = () => {
                 <SwiperSlide key={index} className="w-full">
                   <div className="h-[460px] relative group flex justify-center items-center bg-white">
                     {/* overlay */}
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/5 rounded-md z-10"></div>
                     {/* image */}
                     <div className="relative w-full h-full">
                       <Image
