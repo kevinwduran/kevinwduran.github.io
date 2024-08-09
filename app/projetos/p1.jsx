@@ -1,9 +1,11 @@
-import React from 'react'
-
+"use client"
 const p1 = () => {
   return (
-    <div>p1</div>
-  )
-}
+    <div>
+      <h1>Projeto 1</h1>
+      <p>Detalhes do Projeto 1.</p>
+    </div>
+  );
+};
 
-export default p1
+export default p1;

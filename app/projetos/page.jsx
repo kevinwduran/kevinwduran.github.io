@@ -38,7 +38,7 @@ const projects = [
       },
     ],
     image: "/assets/portfolio.png",
-    live: "",
+    live: "/projetos/p1",
     website: "https://github.com/kevinwduran/kevinwduran.github.io",
   },
   {
@@ -66,7 +66,7 @@ const projects = [
       },
     ],
     image: "/assets/apresentação login mobile.jpg",
-    live: "",
+    live: "p2",
     website: "https://github.com/kevinwduran/Sistema-Ferragens-negrao/tree/main",
   },
 ];
