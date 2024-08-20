@@ -18,7 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter_tight.variable} grid-cols-1 grid xl:grid-cols-custom`}>
+      <body
+        className={`${inter_tight.variable} grid-cols-1 grid xl:grid-cols-custom`}
+      >
         <Header />
         <div className={`flex justify-center`}>{children}</div>
       </body>

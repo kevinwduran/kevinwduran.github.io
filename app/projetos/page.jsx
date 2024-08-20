@@ -18,6 +18,29 @@ import WorkSliderBtns from "../../components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    category: "UX Design",
+    title: "Padaria Bom Apetite",
+    description:
+      "Projeto de UX Design para um aplicativo de vendas e entregas para uma padaria.",
+    stack: [
+      {
+        name: "Figma",
+      },
+      {
+        name: "UX Design",
+      },
+      {
+        name: "UCD",
+      },
+      {
+        name: "Design Thinking",
+      },
+    ],
+    image: "/assets/portfolio.png",
+    live: "/projetos/p1",
+  },
+  {
+    num: "02",
     icon: <FaGithub />,
     category: "Design e Programação Web",
     title: "Meu Portfólio Pessoal",
@@ -38,11 +61,11 @@ const projects = [
       },
     ],
     image: "/assets/portfolio.png",
-    live: "/projetos/p1",
+    live: "/projetos/p2",
     website: "https://github.com/kevinwduran/kevinwduran.github.io",
   },
   {
-    num: "02",
+    num: "03",
     icon: <FaGithub />,
     category: "UI Design e Programação Web",
     title: "Sistema Ferragens Negrão",
@@ -66,8 +89,9 @@ const projects = [
       },
     ],
     image: "/assets/apresentação login mobile.jpg",
-    live: "p2",
-    website: "https://github.com/kevinwduran/Sistema-Ferragens-negrao/tree/main",
+    live: "/projetos/p3",
+    website:
+      "https://github.com/kevinwduran/Sistema-Ferragens-negrao/tree/main",
   },
 ];
 
@@ -122,26 +146,28 @@ const Projetos = () => {
                         <BsArrowUpRight className="text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Acessar projeto</p>
+                        <p>Ver mais detalhes</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
                 {/* live project github / behance */}
-                <Link href={project.website} target="_blank">
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-primary/10 flex justify-center items-center group">
-                        <div className="text-3xl group-hover:text-accent">
-                          {project.icon}
-                        </div>
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Acessar projeto</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
+                {project.website && (
+                  <Link href={project.website} target="_blank">
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-primary/10 flex justify-center items-center group">
+                          <div className="text-3xl group-hover:text-accent">
+                            {project.icon}
+                          </div>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Acessar projeto</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
