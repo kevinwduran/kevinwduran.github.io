@@ -31,9 +31,13 @@ module.exports = {
         },
       },
       gridTemplateColumns: {
-        'custom': '20% 80%',
+        custom: "20% 80%",
       },
       keyframes: {
+        gradient: {
+          "0%": { "background-position": "0% 50%" },
+          "100%": { "background-position": "100% 50%" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -46,9 +50,9 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        gradient: "gradient 3s linear infinite",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
 };
-
