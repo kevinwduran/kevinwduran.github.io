@@ -36,7 +36,7 @@ const projects = [
         name: "Design Thinking",
       },
     ],
-    image: "/assets/portfolio.png",
+    image: "/assets/Intersect.png",
     live: "/projetos/p1",
   },
   {
