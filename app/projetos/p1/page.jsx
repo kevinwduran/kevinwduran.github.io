@@ -31,7 +31,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="flex z-10 ">
+        <div className="flex z-10">
           <div className="flex gap-4">
             <p className="text-right w-[35vw]">Ferramentas</p>
             <ul className="font-semibold w-[35vw]">
@@ -43,6 +43,41 @@ const page = () => {
         </div>
       </div>
 
+      <ul className="gap-2 flex flex-wrap z-10 max-w-[40vw] justify-center">
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Entrevistas
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Pesquisas Quantitativas e Qualitativas
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Objetivos e Hipóteses
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Personas
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          User Flows
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Wireframes
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Protótipos Lo-Fi
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Testes de Usabilidade
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Formulário SUS
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Feedback e Iteração
+        </li>
+        <li className="text-sm text-accent border border-accent py-1 px-3 rounded-full">
+          Design System
+        </li>
+      </ul>
       <div className="flex flex-col xl:flex-row items-center justify-center gap-8 mt-4">
         <a
           href="/assets/ProjetoBomApetite.pptx
@@ -147,21 +182,36 @@ const page = () => {
         </ul>
 
         <p className="md:max-w-[50vw] max-w-[90vw] text-center mt-4">
-          Além disso, fez-se necessário criar um <strong>fluxo de usuário</strong> para entender
-          quais telas eram necessárias na aplicação:
+          Além disso, fez-se necessário criar um{" "}
+          <strong>fluxo de usuário</strong> para entender quais telas eram
+          necessárias na aplicação:
         </p>
         <CustomImage
-        src="/assets/UserFlow.jpg"
-        alt="Fluxo de Usuário"
-        className="mx-auto"
-      />
+          src="/assets/UserFlow.jpg"
+          alt="Fluxo de Usuário"
+          className="mx-auto"
+        />
       </div>
+
+      <h2 className="text-2xl font-semibold mt-20">- Wireframes -</h2>
+      <p className="md:max-w-[50vw] max-w-[90vw] text-center mt-4">
+        Para evitar grandes reaprendizados e consequentemente uma frustração dos
+        usuários, as wireframes foram projetadas para serem simples e
+        familiares.
+      </p>
+      <CustomImage
+        src="/assets/wireframes.jpeg"
+        alt="Imagem com borda animada"
+        className="mx-auto"
+        height="300px"
+      />
 
       <h2 className="text-2xl font-semibold mt-20">- Protótipos lo-fi -</h2>
       <CustomImage
         src="/assets/wireframes-digitais.png"
         alt="Imagem com borda animada"
         className="mx-auto"
+        height="400px"
       />
 
       <a
@@ -172,11 +222,14 @@ const page = () => {
         Ver Protótipo no Figma
       </a>
 
-      <h2 className="text-2xl font-semibold mt-20">- Protótipos de alta fidelidade -</h2>
+      <h2 className="text-2xl font-semibold mt-20">
+        - Protótipos de alta fidelidade -
+      </h2>
       <CustomImage
         src="/assets/highFidelity.jpg"
         alt="Imagem com borda animada"
         className="mx-auto"
+        height="400px"
       />
 
       <a
@@ -186,6 +239,42 @@ const page = () => {
       >
         Ver Protótipo no Figma
       </a>
+      <p className="md:max-w-[50vw] max-w-[90vw] text-center mt-4">
+        Com as telas projetadas e validadas, foi o momento de evoluir o projeto
+        para alta fidelidade, para isso foi criado um guia de estilos que
+        posteriormente seria utilizado como base para a criação do primeiro
+        design system da Bom Apetite.
+      </p>
+
+      <div className="border border-primary/10 my-16 p-8 rounded-md">
+        <h2 className="text-2xl font-semibold">
+          <strong>Meus aprendizados</strong> até o momento atual do projeto
+        </h2>
+        <p className="md:max-w-[50vw] max-w-[90vw] mt-4">
+          Esse projeto foi desafiador, especialmente por ser o único UX e UI
+          designer envolvido. A responsabilidade foi grande, já que precisei
+          coordenar todas as etapas, desde o planejamento até a execução dos
+          testes e entrevistas. No entanto, essa experiência me proporcionou um
+          aprendizado imenso, me preparando para enfrentar situações similares
+          no futuro.
+        </p>
+        <p className="md:max-w-[50vw] max-w-[90vw] mt-4">
+          Esse projeto foi desafiador, especialmente por ser o único UX e UI
+          designer envolvido. A responsabilidade foi grande, já que precisei
+          coordenar todas as etapas, desde o planejamento até a execução dos
+          testes e entrevistas. No entanto, essa experiência me proporcionou um
+          aprendizado imenso, me preparando para enfrentar situações similares
+          no futuro.
+        </p>
+        <p className="md:max-w-[50vw] max-w-[90vw] mt-4">
+          Esse projeto foi desafiador, especialmente por ser o único UX e UI
+          designer envolvido. A responsabilidade foi grande, já que precisei
+          coordenar todas as etapas, desde o planejamento até a execução dos
+          testes e entrevistas. No entanto, essa experiência me proporcionou um
+          aprendizado imenso, me preparando para enfrentar situações similares
+          no futuro.
+        </p>
+      </div>
     </section>
   );
 };
