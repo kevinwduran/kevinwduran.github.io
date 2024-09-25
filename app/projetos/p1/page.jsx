@@ -182,7 +182,7 @@ const page = () => {
       </div>
 
       <h2 className="text-2xl font-semibold mt-20">- Wireframes -</h2>
-      <p className="md:max-w-[50vw] max-w-[90vw] text-center mt-4">
+      <p className={paragraphClass + " mt-4"}>
         Para evitar grandes reaprendizados e consequentemente uma frustração dos
         usuários, as wireframes foram projetadas para serem simples e
         familiares.
@@ -195,19 +195,29 @@ const page = () => {
       />
 
       <h2 className="text-2xl font-semibold mt-20">- Protótipos lo-fi -</h2>
+      <p className={paragraphClass + " mt-4"}>
+        O processo de passar os wireframes do papel para o digital foi bem
+        interessante e desafiador, pois tentei aproximar o design à um protótipo
+        de baixa fidelidade.
+      </p>
       <CustomImage
         src="/assets/wireframes-digitais.png"
         alt="Imagem com borda animada"
         className="mx-auto"
-        height="300px"
+        height="400px"
       />
 
       <h2 className="text-2xl font-semibold mt-20">- Protótipos hi-fi -</h2>
+      <p className={paragraphClass + " mt-4"}>
+        Minha parte favorita do projeto. Pensar em tipografias, ícones, cores,
+        fluxo, scroll e criação de telas faltantes foi um grande ponto para
+        amadurecimento do aplicativo da Bom Apetite.
+      </p>
       <CustomImage
         src="/assets/highFidelity.jpg"
         alt="Imagem com borda animada"
         className="mx-auto"
-        height="300px"
+        height="400px"
       />
 
       <h2 className="text-2xl font-semibold mt-20">- Design System -</h2>
