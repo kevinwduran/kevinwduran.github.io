@@ -83,6 +83,15 @@ const page = () => {
         </a>
       </div>
 
+      <div className="max-w-[90%] h-[15%] flex items-center justify-center p-5 bg-black mt-8">
+        <iframe
+          width="90%"
+          height="90%"
+          src="https://embed.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=412-80&node-type=frame&scaling=scale-down&content-scaling=responsive&page-id=0%3A1&starting-point-node-id=412%3A80&show-proto-sidebar=1&embed-host=share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
       <div className={containerClass}>
         <h2 className={titleClass}>- Sobre a Bom Apetite -</h2>
         <p className={paragraphClass}>
@@ -120,6 +129,7 @@ const page = () => {
         src="/assets/presentation3sc.jpg"
         alt="Imagem com borda animada"
         className="mx-auto"
+        objectFit="cover"
       />
 
       <div className={containerClass}>
@@ -178,6 +188,7 @@ const page = () => {
           src="/assets/UserFlow.jpg"
           alt="Fluxo de Usuário"
           className="mx-auto"
+          objectFit="cover"
         />
       </div>
 
@@ -192,6 +203,7 @@ const page = () => {
         alt="Imagem com borda animada"
         className="mx-auto"
         height="300px"
+        objectFit="cover"
       />
 
       <h2 className="text-2xl font-semibold mt-20">- Protótipos lo-fi -</h2>
@@ -205,6 +217,7 @@ const page = () => {
         alt="Imagem com borda animada"
         className="mx-auto"
         height="400px"
+        objectFit="cover"
       />
       <a
         target="_blank"
@@ -225,17 +238,46 @@ const page = () => {
         alt="Imagem com borda animada"
         className="mx-auto"
         height="400px"
+        objectFit="cover"
       />
       <a
         target="_blank"
-        href="https://www.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=462-165&node-type=frame&t=2GVOeBKycmacxDXV-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=462%3A165&show-proto-sidebar=1"
+        href="https://www.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=412-80&node-type=frame&t=ZbOLv4Kpdq3l6dIm-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=412%3A80&show-proto-sidebar=1"
         className=" hover:text-accent-hover transition-colors"
       >
         Ver Protótipo hi-fi no Figma
       </a>
 
-      <h2 className="text-2xl font-semibold mt-20">- Design System -</h2>
-      <p>Loading...</p>
+      <h2 className="text-2xl font-semibold mt-20">- Style Guide -</h2>
+      <p className={paragraphClass + " mt-4"}>
+        Com as telas projetadas e validadas, foi o momento de evoluir o projeto
+        para alta fidelidade, para isso foi criado o primeiro guia de estilos da
+        Bom Apetite que posteriormente seria utilizado como base para a criação
+        de seu primeiro design system.
+      </p>
+      <CustomImage
+        src="/assets/Design System.jpg"
+        alt="Design System"
+        className="mx-auto"
+        height="450px"
+      />
+
+      <h2 className="text-2xl font-semibold mt-20">- Refinando a solução -</h2>
+      <p className={paragraphClass + " mt-4"}>
+        O projeto foi validado novamente com um novo teste de usabilidade, e
+        neste teste alguns problemas foram relatados como a falta de
+        acessibilidade na cor dos botões devido à sua falta de contraste. Me
+        atentei e vi que a cor não seguia os padrões de um bom contraste. Então,
+        houve uma troca de tom do laranja. Agora um pouco mais escuro:
+      </p>
+      <CustomImage
+        src="/assets/changeOrange.jpg"
+        alt="Mudança de cor e tom de laranja"
+        className="mx-auto"
+        width="200px"
+        height="200px"
+        objectFit="cover"
+      />
 
       <div className="border border-primary/10 my-16 p-8 rounded-md mx-2">
         <h2 className="text-2xl font-semibold">
