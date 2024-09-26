@@ -50,7 +50,7 @@ const page = () => {
 
         <div className="flex items-center gap-2 text-yellow-500 absolute right-10 bottom-10">
           <LuAlertTriangle />
-          <p>O projeto está em andamento... 90%</p>
+          <p>O projeto está em andamento... 99%</p>
         </div>
       </div>
 
@@ -83,7 +83,7 @@ const page = () => {
         </a>
       </div>
 
-      <div className="max-w-[90%] h-[15%] flex items-center justify-center p-5 bg-black mt-8">
+      <div className="max-w-[90%] h-[20%] flex items-center justify-center p-5 bg-black mt-8">
         <iframe
           width="90%"
           height="90%"
