@@ -206,6 +206,13 @@ const page = () => {
         className="mx-auto"
         height="400px"
       />
+      <a
+        target="_blank"
+        href="https://www.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=328-306&node-type=frame&t=2GVOeBKycmacxDXV-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=328%3A306&show-proto-sidebar=1"
+        className=" hover:text-accent-hover transition-colors"
+      >
+        Ver Protótipo lo-fi no Figma
+      </a>
 
       <h2 className="text-2xl font-semibold mt-20">- Protótipos hi-fi -</h2>
       <p className={paragraphClass + " mt-4"}>
@@ -219,6 +226,13 @@ const page = () => {
         className="mx-auto"
         height="400px"
       />
+      <a
+        target="_blank"
+        href="https://www.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=462-165&node-type=frame&t=2GVOeBKycmacxDXV-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=462%3A165&show-proto-sidebar=1"
+        className=" hover:text-accent-hover transition-colors"
+      >
+        Ver Protótipo hi-fi no Figma
+      </a>
 
       <h2 className="text-2xl font-semibold mt-20">- Design System -</h2>
       <p>Loading...</p>
@@ -236,20 +250,15 @@ const page = () => {
           no futuro.
         </p>
         <p className="md:max-w-[50vw] max-w-[90vw] mt-4">
-          Esse projeto foi desafiador, especialmente por ser o único UX e UI
-          designer envolvido. A responsabilidade foi grande, já que precisei
-          coordenar todas as etapas, desde o planejamento até a execução dos
-          testes e entrevistas. No entanto, essa experiência me proporcionou um
-          aprendizado imenso, me preparando para enfrentar situações similares
-          no futuro.
-        </p>
-        <p className="md:max-w-[50vw] max-w-[90vw] mt-4">
-          Esse projeto foi desafiador, especialmente por ser o único UX e UI
-          designer envolvido. A responsabilidade foi grande, já que precisei
-          coordenar todas as etapas, desde o planejamento até a execução dos
-          testes e entrevistas. No entanto, essa experiência me proporcionou um
-          aprendizado imenso, me preparando para enfrentar situações similares
-          no futuro.
+          Durante o desenvolvimento deste projeto, pude aprimorar minhas
+          habilidades em UX e UI, passando por todas as etapas do processo —
+          desde entrevistas e testes até a prototipagem. Esse aprendizado só foi
+          possível graças ao apoio dos meus familiares e amigos, como: Gian e
+          Mateus, que participaram ativamente nas entrevistas, nos testes de
+          usabilidade e no preenchimento do formulário SUS. Também gostaria de
+          agradecer aos meus familiares, que me deram suporte durante todo o
+          desenvolvimento e contribuíram com feedbacks valiosos para que o
+          projeto fosse concluído com sucesso.
         </p>
       </div>
     </section>
