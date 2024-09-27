@@ -10,7 +10,8 @@ const page = () => {
           {/* info */}
           <div className="justify-start">
             <h1 className="text-4xl font-semibold mb-9 mt-20">
-              Projeto de Portfólio
+              Projeto Ferragens Negrão
+              
             </h1>
             <div className="flex items-center gap-2 text-yellow-500 absolute right-10 bottom-10">
               <LuAlertTriangle />
