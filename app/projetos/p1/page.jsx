@@ -71,7 +71,7 @@ const page = () => {
       </ul>
 
       <div className="flex flex-col xl:flex-row items-center justify-center gap-8 mt-4">
-        <a href="/assets/ProjetoBomApetite.pptx" download>
+        <a href="/assets/ProjetoBomApetite.pdf" download>
           <Button
             variant="outline"
             size="lg"
