@@ -1,7 +1,7 @@
 "use client";
 
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
-import { SiAdobeillustrator, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiAdobeillustrator, SiAdobephotoshop, SiBootstrap } from "react-icons/si";
 import {
   Tabs,
   TabsContent,
@@ -36,13 +36,17 @@ const about = {
 };
 
 const experience = {
-  icon: "as",
   title: "Experiência",
   items: [
     {
+      company: "Domatech Software House",
+      position: "Estagiário de UI/UX Design",
+      duration: "10/2024 - Presente",
+    },
+    {
       company: "thyssenkrupp Steering Brasil",
       position: "Assistente Administrativo",
-      duration: "03/2023 - Presente",
+      duration: "03/2023 - 10/2024",
     },
   ],
 };
@@ -64,7 +68,7 @@ const education = {
     {
       instituion: "Coursera",
       degree: "Google UX Design",
-      duration: "06/2024 - Presente",
+      duration: "06/2024 - 01/2025",
     },
     {
       instituion: "Origamid",
@@ -95,12 +99,12 @@ const skills = {
       name: "React JS",
     },
     {
-      icon: <SiNextdotjs />,
-      name: "Next JS",
+      icon: <SiAdobephotoshop />,
+      name: "Photoshop",
     },
     {
-      icon: <SiTailwindcss />,
-      name: "Tailwind CSS",
+      icon: <SiBootstrap />,
+      name: "Bootstrap",
     },
     {
       icon: <SiAdobeillustrator />,
@@ -139,26 +143,40 @@ const Sobre = () => {
                   <div className="max-w-[600px]">
                     <p className="font-semibold">Olá, me chamo Kevin.</p>
                     <p className="text-primary/85 text-sm">
-                      Eu me importo em criar produtos cuidadosamente elaborados.{" "}
+                      Eu sou um apaixonado por criar produtos cuidadosamente
+                      elaborados e focados na experiência do usuário.
+                      Atualmente, sou Estagiário de UX/UI Design na Domatech,
+                      uma startup de tecnologia onde contribuo para a criação de
+                      soluções inovadoras e centradas no usuário.
                       <br />
-                      Atualmente, trabalho como assistente administrativo na
-                      multinacional thyssenkrupp. Estou estudando Engenharia de
-                      Software na UniSenaiPR desde 2022, com previsão de término
-                      em 2025. <br />
-                      <br /> Tenho familiaridade com programação, especialmente
-                      no desenvolvimento web, e sou apaixonado por UI e UX
-                      design. <br />
                       <br />
-                      Acredito que uma boa interface não só torna um produto
-                      visualmente atrativo, mas também essencial para
-                      proporcionar uma experiência envolvente e intuitiva para o
-                      usuário. <br />
-                      <br /> Tenho dedicado tempo significativo ao estudo de UX
-                      design, buscando entender como interfaces bem projetadas
-                      podem melhorar a usabilidade e a satisfação do usuário.
-                      <br /> Estou comprometido em criar produtos que não só
-                      atendam às necessidades dos usuários, mas que também
-                      encantem e inspirem. Adoraria ouvir de você,{" "}
+                      Tenho experiência prática no desenvolvimento web e um
+                      profundo interesse por design de interfaces e
+                      experiências. Além disso, estudei Engenharia de Software
+                      na UniSenaiPR desde 2022, com conclusão prevista para
+                      2025, o que me proporciona uma sólida base técnica para
+                      combinar design e funcionalidade.
+                      <br />
+                      <br />
+                      Trabalhei anteriormente como Assistente Administrativo em
+                      uma multinacional, a thyssenkrupp, onde desenvolvi
+                      habilidades organizacionais e um olhar analítico, que
+                      agora aplico ao design e à resolução de problemas
+                      complexos.
+                      <br />
+                      <br />
+                      Sou movido pela crença de que uma boa interface não apenas
+                      torna um produto visualmente atraente, mas também é
+                      crucial para criar experiências envolventes e intuitivas
+                      para os usuários. Dedico-me a estudar e aplicar práticas
+                      de UX design, sempre buscando projetar soluções que
+                      superem as expectativas e proporcionem valor real.
+                      <br />
+                      <br />
+                      Meu compromisso é entregar produtos que encantem, inspirem
+                      e resolvam problemas de maneira eficaz. 
+                      Estou animado para colaborar e transformar ideias em
+                      experiências impactantes! Vamos conversar? {" "}
                       <a
                         className="cursor-pointer text-accent hover:text-accent-hover"
                         href="mailto:kevinwillianduran@gmail.com"

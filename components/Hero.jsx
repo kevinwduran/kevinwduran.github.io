@@ -13,7 +13,7 @@ const Hero = () => {
               <span className="text-accent">Kevin Duran</span>, transformando
               ideias em interfaces excepcionais.
             </p>
-            <span className="text-2xl">UI / UX Designer & Front-End</span>
+            <span className="text-2xl">UI / UX Designer</span>
             {/* botão mídias */}
             <div className="flex flex-col xl:flex-row items-center justify-center gap-8 mt-4">
               <a

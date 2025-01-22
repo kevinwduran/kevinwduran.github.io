@@ -1,27 +1,25 @@
 "use client";
 
-import { MdOutlineDesignServices } from "react-icons/md";
-import { FaLaptopCode } from "react-icons/fa";
-import { TbUserCode } from "react-icons/tb";
+import { TbUserCode, TbDeviceLaptop, TbDevices } from "react-icons/tb";
 
 const services = [
   {
     num: "01",
-    title: "Desenvolvimento Web",
-    description: "Criação de sites responsivos e otimizados, utilizando as mais recentes tecnologias para garantir uma experiência de usuário rápida e eficiente.",
-    icon: <FaLaptopCode />,
-  },
-  {
-    num: "02",
     title: "UI/UX Design",
-    description: "Desenvolvimento de interfaces intuitivas e agradáveis, focadas na experiência do usuário maximizando sua usabilidade e a satisfação.",
+    description: "Desenvolvimento de interfaces intuitivas e agradáveis, focadas na experiência do usuário, maximizando sua usabilidade e satisfação.",
     icon: <TbUserCode />,
   },
   {
+    num: "02",
+    title: "Design de Prototipação",
+    description: "Criação de protótipos interativos de alta fidelidade para validar ideias e melhorar a comunicação com stakeholders.",
+    icon: <TbDeviceLaptop />,
+  },
+  {
     num: "03",
-    title: "Logo Design",
-    description: "Criação de logos únicos e memoráveis que refletem a identidade da sua marca, garantindo um impacto visual forte e duradouro.",
-    icon: <MdOutlineDesignServices />,
+    title: "Design Responsivo",
+    description: "Desenvolvimento de layouts adaptáveis para diferentes dispositivos, garantindo uma experiência consistente em desktop, tablet e mobile.",
+    icon: <TbDevices />,
   },
 ];
 
