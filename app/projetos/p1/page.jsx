@@ -48,10 +48,6 @@ const page = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 text-yellow-500 absolute right-10 bottom-10">
-          <LuAlertTriangle />
-          <p>O projeto está em andamento... 99%</p>
-        </div>
       </div>
 
       <ul className="gap-2 flex flex-wrap z-10 max-w-[90%] lg:max-w-[40vw] justify-center">
@@ -85,9 +81,9 @@ const page = () => {
 
       <div className="max-w-[90%] h-[20%] flex items-center justify-center p-5 bg-black mt-8">
         <iframe
-          width="90%"
-          height="90%"
-          src="https://embed.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=412-80&node-type=frame&scaling=scale-down&content-scaling=responsive&page-id=0%3A1&starting-point-node-id=412%3A80&show-proto-sidebar=1&embed-host=share"
+          width="100%"
+          height="70%"
+          src="https://embed.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bom-apetite?node-id=412-80&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=412%3A80&show-proto-sidebar=1&embed-host=share"
           allowfullscreen
         ></iframe>
       </div>
