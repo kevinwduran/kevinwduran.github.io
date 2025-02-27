@@ -2,7 +2,6 @@ import { FiDownload } from "react-icons/fi";
 import { Button } from "../../../components/ui/button";
 import CustomImage from "../../../components/CustomImage";
 import { BiSolidRightArrow } from "react-icons/bi";
-import { LuAlertTriangle } from "react-icons/lu";
 
 const page = () => {
   const titleClass = "text-2xl font-semibold mb-8";
