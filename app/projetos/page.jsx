@@ -40,14 +40,13 @@ const projects = [
   {
     num: "03",
     icon: <FaGithub />,
-    category: "UI Design e Programação Web",
+    category: "UI/UX Design e Programação Web",
     title: "Sistema Ferragens Negrão",
     description:
       "Projeto acadêmico em parceria com a empresa Ferragens Negrão, desenvolvendo um sistema completo de controle de remanufatura.",
     stack: ["HTML 5", "CSS 3", "Bootstrap", "JavaScript", "Figma"],
     image: "/assets/apresentação login mobile.jpg",
     live: "/projetos/p3",
-    website: "https://github.com/kevinwduran/Sistema-Ferragens-negrao/tree/main",
   },
 ];
 
