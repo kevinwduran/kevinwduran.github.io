@@ -1,6 +1,7 @@
 "use client";
 
 import { TbUserCode, TbDeviceLaptop, TbDevices } from "react-icons/tb";
+import Projetos from "../app/projetos/page";
 
 const services = [
   {
@@ -27,7 +28,7 @@ const Services = () => {
   return (
     <section className="flex flex-col justify-center">
       <div className="container mx-auto">
-        <h1 className="text-5xl font-bold">Serviços</h1>
+        <h1 className="text-4xl font-semibold">Serviços</h1>
         <div
           className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-24 mt-8 mb-8 items-start justify-center"
         >
@@ -56,6 +57,8 @@ const Services = () => {
             );
           })}
         </div>
+        <h1 className="text-4xl font-semibold">Alguns de meus projetos</h1>
+        <Projetos />
       </div>
     </section>
   );

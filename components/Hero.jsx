@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import Socials from "./Socials";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Projetos from "../app/projetos/page";
 
 const Hero = () => {
   const [text, setText] = useState("");
