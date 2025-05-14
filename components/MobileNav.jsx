@@ -6,6 +6,7 @@ import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import Socials from "./Socials";
 import Image from "next/image";
+import { useState } from "react";
 
 const links = [
   {
@@ -28,20 +29,23 @@ const links = [
 
 const MobileNav = () => {
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger>
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
         <div className="mb-20 text-2xl border-b pb-4 mt-2">
-          <Link href="/">
+          <Link href="/" onClick={() => setOpen(false)}>
             <Image
               className=""
               src="/assets/Vector.svg"
               width="50"
               height="25"
+              alt="Logo"
             />
           </Link>
         </div>
@@ -53,6 +57,7 @@ const MobileNav = () => {
               <Link
                 href={link.path}
                 key={index}
+                onClick={() => setOpen(false)}
                 className={`${
                   link.path === pathname
                     ? "text-accent border-b-2 border-accent"

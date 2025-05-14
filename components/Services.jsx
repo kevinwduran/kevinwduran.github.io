@@ -29,7 +29,7 @@ const Services = () => {
       <div className="container mx-auto">
         <h1 className="text-5xl font-bold">Serviços</h1>
         <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-8 items-start justify-center"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-24 mt-8 mb-8 items-start justify-center"
         >
           {services.map((service, index) => {
             return (
@@ -51,7 +51,7 @@ const Services = () => {
                 {/* descrição */}
                 <p className="max-w-[18rem]">{service.description}</p>
                 {/* border */}
-                <div className="border-b border-primary/10 w-full flex"></div>
+                {/* <div className="border-b border-primary/10 w-full flex"></div> */}
               </div>
             );
           })}
