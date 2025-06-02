@@ -48,6 +48,16 @@ const projects = [
     image: "/assets/apresentação login mobile.jpg",
     live: "/projetos/p3",
   },
+  {
+    num: "04",
+    category: "UI/UX Design",
+    title: "E-commerce G Farma",
+    description:
+      "Projeto de novo site para a farmácia G Farma.",
+    stack: ["UI Design", "UCD", "UX Design", "Figma"],
+    image: "/assets/apresentação login mobile.jpg",
+    live: "/projetos/p4",
+  },
 ];
 
 const Projetos = () => {
