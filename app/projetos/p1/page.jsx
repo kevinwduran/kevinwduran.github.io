@@ -5,8 +5,10 @@ import { BiSolidRightArrow } from "react-icons/bi";
 
 const titleClass = "text-2xl font-semibold mb-8 text-center";
 const paragraphClass = "md:max-w-[50vw] max-w-[90vw] text-center";
-const listItemClass = "text-sm text-accent border border-accent py-1 px-3 rounded-full";
-const containerClass = "flex items-center flex-col justify-center p-0 md:p-24 md:pb-0 pt-16";
+const listItemClass =
+  "text-sm text-accent border border-accent py-1 px-3 rounded-full";
+const containerClass =
+  "flex items-center flex-col justify-center p-0 md:p-24 md:pb-0 pt-16";
 
 const page = () => {
   return (
@@ -44,10 +46,9 @@ const page = () => {
             </ul>
           </div>
         </div>
-
       </div>
 
-      <ul className="gap-2 flex mt-8 flex-wrap z-10 max-w-[90%] lg:max-w-[40vw] justify-center">
+      <ul className="gap-2 flex mt-12 flex-wrap z-10 max-w-[90%] lg:max-w-[40vw] justify-center">
         <li className={listItemClass}>Entrevistas</li>
         <li className={listItemClass}>
           Pesquisas Quantitativas e Qualitativas
@@ -76,10 +77,9 @@ const page = () => {
         </a>
       </div>
 
-      <div className="max-w-[90%] h-[20%] flex items-center justify-center p-5 bg-black mt-8">
+      <div className="w-full max-w-6xl h-[600px] bg-black mt-8 rounded-lg overflow-hidden">
         <iframe
-          width="100%"
-          height="50%"
+          className="w-full h-full"
           src="https://embed.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bom-apetite?node-id=412-80&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=412%3A80&show-proto-sidebar=1&embed-host=share"
           allowFullScreen
         ></iframe>
