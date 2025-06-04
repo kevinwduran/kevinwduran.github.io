@@ -3,17 +3,15 @@ import { Button } from "../../../components/ui/button";
 import CustomImage from "../../../components/CustomImage";
 import { BiSolidRightArrow } from "react-icons/bi";
 
-const page = () => {
-  const titleClass = "text-2xl font-semibold mb-8";
-  const paragraphClass = "md:max-w-[50vw] max-w-[90vw] text-center";
-  const listItemClass =
-    "text-sm text-accent border border-accent py-1 px-3 rounded-full";
-  const containerClass =
-    "flex items-center flex-col justify-center p-0 md:p-24 md:pb-0 pt-16";
+const titleClass = "text-2xl font-semibold mb-8 text-center";
+const paragraphClass = "md:max-w-[50vw] max-w-[90vw] text-center";
+const listItemClass = "text-sm text-accent border border-accent py-1 px-3 rounded-full";
+const containerClass = "flex items-center flex-col justify-center p-0 md:p-24 md:pb-0 pt-16";
 
+const page = () => {
   return (
     <section className="flex items-center flex-col justify-center relative">
-      <div className="mt-8 xl:m-0 relative min-w-[100%] h-[20%] bg-[url('/assets/Intersect.png')] bg-cover bg-center flex items-center flex-col justify-center">
+      <div className="mt-8 xl:m-0 relative min-w-[100%] max-h-[20%] bg-gray-300 bg-cover bg-center flex items-center flex-col justify-center">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
         <div className="relative z-10 h-60 flex items-center flex-col justify-center">
           <h1 className="md:text-4xl text-3xl font-bold">
@@ -49,7 +47,7 @@ const page = () => {
 
       </div>
 
-      <ul className="gap-2 flex flex-wrap z-10 max-w-[90%] lg:max-w-[40vw] justify-center">
+      <ul className="gap-2 flex mt-8 flex-wrap z-10 max-w-[90%] lg:max-w-[40vw] justify-center">
         <li className={listItemClass}>Entrevistas</li>
         <li className={listItemClass}>
           Pesquisas Quantitativas e Qualitativas
@@ -81,9 +79,9 @@ const page = () => {
       <div className="max-w-[90%] h-[20%] flex items-center justify-center p-5 bg-black mt-8">
         <iframe
           width="100%"
-          height="70%"
+          height="50%"
           src="https://embed.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bom-apetite?node-id=412-80&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=412%3A80&show-proto-sidebar=1&embed-host=share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
 
@@ -216,6 +214,7 @@ const page = () => {
       />
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://www.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=328-306&node-type=frame&t=2GVOeBKycmacxDXV-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=328%3A306&show-proto-sidebar=1"
         className=" hover:text-accent-hover transition-colors"
       >
@@ -237,6 +236,7 @@ const page = () => {
       />
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://www.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=412-80&node-type=frame&t=ZbOLv4Kpdq3l6dIm-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=412%3A80&show-proto-sidebar=1"
         className=" hover:text-accent-hover transition-colors"
       >
