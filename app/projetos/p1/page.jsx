@@ -10,58 +10,70 @@ const listItemClass =
 const containerClass =
   "flex items-center flex-col justify-center p-0 md:p-24 md:pb-0 pt-16";
 
-const page = () => {
+const infos = [
+  { label: "Função", value: "UX/UI Designer" },
+  { label: "Duração", value: "2 meses (Ago-Out 2024)" },
+  {
+    label: "Ferramentas",
+    value: ["Caneta e Papel", "Figma", "Adobe XD"],
+    isList: true,
+  },
+];
+
+const processos = [
+  "Entrevistas",
+  "Pesquisas Quantitativas e Qualitativas",
+  "Objetivos e Hipóteses",
+  "Personas",
+  "User Flows",
+  "Wireframes",
+  "Protótipos Lo-Fi",
+  "Testes de Usabilidade",
+  "Formulário SUS",
+  "Feedback e Iteração",
+  "Design System",
+];
+
+const hipoteses = [
+  "Muitos usuários poderiam ter dificuldade em adotar a tecnologia para realizar pedidos em uma padaria;",
+  "Esperava que poucos usuários soubessem como verificar o rastreio de um pedido;",
+  "Achava que a maioria teria facilidade em ajustar a quantidade de itens no pedido.",
+];
+
+const Page = () => {
   return (
     <section className="flex items-center flex-col justify-center relative">
       <div className="mt-8 xl:m-0 relative min-w-[100%] max-h-[20%] bg-gray-300 bg-cover bg-center flex items-center flex-col justify-center">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
         <div className="relative z-10 h-60 flex items-center flex-col justify-center">
-          <h1 className="md:text-4xl text-3xl font-bold">
-            Padaria Bom Apetite
-          </h1>
+          <h1 className="md:text-4xl text-3xl font-bold">Padaria Bom Apetite</h1>
           <p className="text-center">Projeto UX Design</p>
         </div>
 
-        <div className="flex z-10">
-          <div className="flex gap-4">
-            <p className="text-right w-[35vw]">Função</p>
-            <p className="font-semibold w-[35vw]">UX/UI Designer</p>
+        {infos.map((item) => (
+          <div key={item.label} className="flex z-10">
+            <div className="flex gap-4">
+              <p className="text-right w-[35vw]">{item.label}</p>
+              {item.isList ? (
+                <ul className="font-semibold w-[35vw]">
+                  {item.value.map((tool) => (
+                    <li key={tool}>{tool}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="font-semibold w-[35vw]">{item.value}</p>
+              )}
+            </div>
           </div>
-        </div>
-
-        <div className="flex z-10 ">
-          <div className="flex gap-4">
-            <p className="text-right w-[35vw]">Duração</p>
-            <p className="font-semibold w-[35vw]">2 meses (Ago-Out 2024)</p>
-          </div>
-        </div>
-
-        <div className="flex z-10">
-          <div className="flex gap-4">
-            <p className="text-right w-[35vw]">Ferramentas</p>
-            <ul className="font-semibold w-[35vw]">
-              <li>Caneta e Papel</li>
-              <li>Figma</li>
-              <li>Adobe XD</li>
-            </ul>
-          </div>
-        </div>
+        ))}
       </div>
 
       <ul className="gap-2 flex mt-12 flex-wrap z-10 max-w-[90%] lg:max-w-[40vw] justify-center">
-        <li className={listItemClass}>Entrevistas</li>
-        <li className={listItemClass}>
-          Pesquisas Quantitativas e Qualitativas
-        </li>
-        <li className={listItemClass}>Objetivos e Hipóteses</li>
-        <li className={listItemClass}>Personas</li>
-        <li className={listItemClass}>User Flows</li>
-        <li className={listItemClass}>Wireframes</li>
-        <li className={listItemClass}>Protótipos Lo-Fi</li>
-        <li className={listItemClass}>Testes de Usabilidade</li>
-        <li className={listItemClass}>Formulário SUS</li>
-        <li className={listItemClass}>Feedback e Iteração</li>
-        <li className={listItemClass}>Design System</li>
+        {processos.map((processo) => (
+          <li key={processo} className={listItemClass}>
+            {processo}
+          </li>
+        ))}
       </ul>
 
       <div className="flex flex-col xl:flex-row items-center justify-center gap-8 mt-4">
@@ -138,12 +150,12 @@ const page = () => {
 
       <CustomImage
         src="/assets/Persona1.png"
-        alt="Imagem com borda animada sobre a primeira persona do estudo de descoberta"
+        alt="Imagem da primeira persona"
         className="mx-auto"
       />
       <CustomImage
         src="/assets/Persona2.png"
-        alt="Imagem com borda animada sobre a segunda persona do estudo de descoberta"
+        alt="Imagem da segunda persona"
         className="mx-auto"
       />
 
@@ -155,21 +167,12 @@ const page = () => {
         </p>
 
         <ul className="md:max-w-[65vw] max-w-[90vw] text-primary/70">
-          <li className="flex items-center">
-            <BiSolidRightArrow className="mr-2 text-xl text-accent" />
-            Muitos usuários poderiam ter dificuldade em adotar a tecnologia para
-            realizar pedidos em uma padaria;
-          </li>
-          <li className="flex items-center">
-            <BiSolidRightArrow className="mr-2 text-xl text-accent" />
-            Esperava que poucos usuários soubessem como verificar o rastreio de
-            um pedido;
-          </li>
-          <li className="flex items-center">
-            <BiSolidRightArrow className="mr-2 text-xl text-accent" />
-            Achava que a maioria teria facilidade em ajustar a quantidade de
-            itens no pedido.
-          </li>
+          {hipoteses.map((hip) => (
+            <li key={hip} className="flex items-center">
+              <BiSolidRightArrow className="mr-2 text-xl text-accent" />
+              {hip}
+            </li>
+          ))}
         </ul>
 
         <p className={paragraphClass + " mt-4"}>
@@ -193,7 +196,7 @@ const page = () => {
       </p>
       <CustomImage
         src="/assets/wireframes.jpeg"
-        alt="Imagem com borda animada"
+        alt="Wireframes"
         className="mx-auto"
         height="300px"
         objectFit="cover"
@@ -207,7 +210,7 @@ const page = () => {
       </p>
       <CustomImage
         src="/assets/wireframes-digitais.png"
-        alt="Imagem com borda animada"
+        alt="Wireframes digitais"
         className="mx-auto"
         height="400px"
         objectFit="cover"
@@ -216,7 +219,7 @@ const page = () => {
         target="_blank"
         rel="noopener noreferrer"
         href="https://www.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=328-306&node-type=frame&t=2GVOeBKycmacxDXV-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=328%3A306&show-proto-sidebar=1"
-        className=" hover:text-accent-hover transition-colors"
+        className="hover:text-accent-hover transition-colors"
       >
         Ver Protótipo lo-fi no Figma
       </a>
@@ -229,7 +232,7 @@ const page = () => {
       </p>
       <CustomImage
         src="/assets/highFidelity.jpg"
-        alt="Imagem com borda animada"
+        alt="Protótipo hi-fi"
         className="mx-auto"
         height="400px"
         objectFit="cover"
@@ -238,7 +241,7 @@ const page = () => {
         target="_blank"
         rel="noopener noreferrer"
         href="https://www.figma.com/proto/6lvyqlduaXmGu1iaAiPoEv/bikcraft-wireframe?node-id=412-80&node-type=frame&t=ZbOLv4Kpdq3l6dIm-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=412%3A80&show-proto-sidebar=1"
-        className=" hover:text-accent-hover transition-colors"
+        className="hover:text-accent-hover transition-colors"
       >
         Ver Protótipo hi-fi no Figma
       </a>
@@ -288,13 +291,13 @@ const page = () => {
         </p>
         <p className="md:max-w-[50vw] max-w-[90vw] mt-4">
           Durante o desenvolvimento deste projeto, pude aprimorar minhas
-          habilidades em UX e UI, passando por todas as etapas do processo —
+          habilidades em UX e UI, passando por todas as etapas do processo — 
           desde entrevistas e testes até a prototipagem. Esse aprendizado só foi
-          possível graças ao apoio dos meus familiares e amigos, como: Gian e
-          Mateus, que participaram ativamente nas entrevistas, nos testes de
-          usabilidade e no preenchimento do formulário SUS. Também gostaria de
-          agradecer aos meus familiares, que me deram suporte durante todo o
-          desenvolvimento e contribuíram com feedbacks valiosos para que o
+          possível graças ao apoio dos meus familiares e amigos, como: Gian e 
+          Mateus, que participaram ativamente nas entrevistas, nos testes de 
+          usabilidade e no preenchimento do formulário SUS. Também gostaria de 
+          agradecer aos meus familiares, que me deram suporte durante todo o 
+          desenvolvimento e contribuíram com feedbacks valiosos para que o 
           projeto fosse concluído com sucesso.
         </p>
       </div>
@@ -302,4 +305,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

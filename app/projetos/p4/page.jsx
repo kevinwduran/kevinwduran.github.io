@@ -1,7 +1,6 @@
 import CustomImage from "../../../components/CustomImage";
 import SolucoesCard from "../../../components/SolucoesCard";
 
-
 const solucoes = [
   {
     title: "Pré-header promocional inteligente",
@@ -47,54 +46,73 @@ const solucoes = [
   },
 ];
 
-const page = () => {
-  const listItemClass = "text-sm text-accent border border-accent py-1 px-3 rounded-full";
-  const titleClass = "text-2xl font-semibold mb-8";
-  const paragraphClass = "md:max-w-[50vw] max-w-[90vw] text-center";
-  const containerClass = "flex items-center flex-col justify-center p-0 md:p-24 md:pb-0 pt-16";
+const titleClass = "text-2xl font-semibold mb-8 text-center";
+const paragraphClass = "md:max-w-[50vw] max-w-[90vw] text-center";
+const listItemClass =
+  "text-sm text-accent border border-accent py-1 px-3 rounded-full";
+const containerClass =
+  "flex items-center flex-col justify-center p-0 md:p-24 md:pb-0 pt-16";
 
-  return (
+const infos = [
+  { label: "Função", value: "UX/UI Designer" },
+  { label: "Duração", value: "3 meses (Fev-Mai 2025)" },
+  {
+    label: "Ferramentas",
+    value: ["Figma", "Photoshop"],
+    isList: true,
+  },
+];
+
+const processos = [
+  "Pesquisa de Usuário",
+  "Adaptação à novo branding",
+  "Wireframes",
+  "Prototipação lo-fi e hi-fi",
+  "Animações",
+  "Acessibilidade",
+];
+
+const page = () => {
+return (
     <section className="flex items-center flex-col justify-center relative">
-      <div className="mt-8 xl:m-0 relative min-w-[100%] h-[20%] bg-gray-300 bg-cover bg-center flex items-center flex-col justify-center">
+      {/* HERO */}
+      <div className="mt-8 xl:m-0 relative min-w-[90%] max-h-[20%] bg-gray-300 bg-cover bg-center flex items-center flex-col justify-center">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white" />
         <div className="relative z-10 mt-8 h-40 flex items-center flex-col justify-center">
-          <h1 className="md:text-4xl text-3xl font-bold text-center">Ferragens Negrão - Controle de Estoque</h1>
-          <p className="text-center">Projeto UX/UI e Desenvolvimento Front-End</p>
+          <h1 className="md:text-4xl text-3xl font-bold text-center">
+            E-commerce G Farma
+          </h1>
+          <p className="text-center">
+            Projeto UX/UI
+          </p>
         </div>
 
-        <div className="flex z-10">
-          <div className="flex gap-4">
-            <p className="text-right w-[35vw]">Função</p>
-            <p className="font-semibold w-[35vw]">UX/UI Designer e Front-End</p>
+        {infos.map((item) => (
+          <div key={item.label} className="flex z-10">
+            <div className="flex gap-4">
+              <p className="text-right w-[35vw]">{item.label}</p>
+              {item.isList ? (
+                <ul className="font-semibold w-[35vw]">
+                  {item.value.map((tool) => (
+                    <li key={tool}>{tool}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="font-semibold w-[35vw]">{item.value}</p>
+              )}
+            </div>
           </div>
-        </div>
-
-        <div className="flex z-10 ">
-          <div className="flex gap-4">
-            <p className="text-right w-[35vw]">Duração</p>
-            <p className="font-semibold w-[35vw]">5 meses (Mar-Jul 2024)</p>
-          </div>
-        </div>
-
-        <div className="flex z-10">
-          <div className="flex gap-4">
-            <p className="text-right w-[35vw]">Ferramentas</p>
-            <ul className="font-semibold w-[35vw]">
-              <li>CSS, HTML e Bootstrap</li>
-              <li>Figma</li>
-            </ul>
-          </div>
-        </div>
+        ))}
       </div>
-      
-      <ul className="gap-2 flex flex-wrap z-10 max-w-[90%] lg:max-w-[40vw] justify-center">
-        <li className={listItemClass}>Pesquisa de Usuário</li>
-        <li className={listItemClass}>Wireframes</li>
-        <li className={listItemClass}>Testes de Usabilidade</li>
-        <li className={listItemClass}>Design Responsivo</li>
-        <li className={listItemClass}>Front-End com Bootstrap</li>
-      </ul>
 
+      {/* TAGS */}
+      <ul className="gap-2 flex mt-12 flex-wrap z-10 max-w-[90%] lg:max-w-[40vw] justify-center">
+        {processos.map((processo) => (
+          <li key={processo} className={listItemClass}>
+            {processo}
+          </li>
+        ))}
+      </ul>
 
       {/* SOBRE */}
       <div className={containerClass}>
@@ -145,6 +163,7 @@ const page = () => {
         />
       </div>
 
+      {/* SOLUÇÕES */}
       <div className="p-4 md:px-24 pt-16 w-full">
         <h2 className="text-2xl font-semibold mb-8 text-center">
           - Soluções Aplicadas -
@@ -182,7 +201,7 @@ const page = () => {
         <a
           target="_blank"
           href="https://www.figma.com/proto/seuprojeto"
-          className=" hover:text-accent-hover transition-colors"
+          className="hover:text-accent-hover transition-colors"
         >
           Ver Protótipo no Figma
         </a>
