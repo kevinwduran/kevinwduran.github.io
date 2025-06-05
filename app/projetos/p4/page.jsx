@@ -5,43 +5,43 @@ const solucoes = [
   {
     title: "Pré-header promocional inteligente",
     text: "Detecta o estado do usuário e mostra as condições de frete grátis, incentivando compras maiores.",
-    img: "/assets/preheader.jpg",
+    img: "/assets/presentation3sc.jpg",
     alt: "Pré-header inteligente",
   },
   {
     title: "Indicação de frete grátis no minicart",
     text: "O cliente vê quanto falta para alcançar o frete grátis diretamente no minicart e no carrinho.",
-    img: "/assets/minicart.jpg",
+    img: "/assets/presentation3sc.jpg",
     alt: "Indicação de frete grátis no minicart",
   },
   {
     title: 'Função "Compre Junto"',
     text: "Adicionamos um módulo de compra combinada, estimulando aumento do ticket médio, inspirado na Amazon.",
-    img: "/assets/comprejunto.jpg",
+    img: "/assets/presentation3sc.jpg",
     alt: "Compre Junto",
   },
   {
     title: "Checkout reformulado",
     text: "Checkout simplificado, com menos passos, comunicação mais clara e menor fricção no processo de compra.",
-    img: "/assets/checkout.jpg",
+    img: "/assets/presentation3sc.jpg",
     alt: "Checkout G Farma",
   },
   {
     title: "Página de Produto remodelada",
     text: "Incluímos informações técnicas, vídeos, gráficos de uso, além de um layout mais limpo e persuasivo.",
-    img: "/assets/pdp.jpg",
+    img: "/assets/presentation3sc.jpg",
     alt: "Página de Produto",
   },
   {
     title: "Nova página de parceiros",
     text: "Espaço dedicado aos sócios, como Cariani e Balestrin, além de kits personalizados e conteúdos exclusivos.",
-    img: "/assets/parceiros.jpg",
+    img: "/assets/presentation3sc.jpg",
     alt: "Página de parceiros",
   },
   {
     title: "Navegação e busca aprimoradas",
     text: "Otimizamos menus, filtros e implementamos uma busca inteligente, que sugere produtos relevantes de forma mais eficiente.",
-    img: "/assets/busca.jpg",
+    img: "/assets/presentation3sc.jpg",
     alt: "Busca e navegação",
   },
 ];
@@ -157,7 +157,7 @@ return (
           pontos fortes e fracos da concorrência.
         </p>
         <CustomImage
-          src="/assets/benchmarkGFarma.jpg"
+          src="/assets/presentation3sc.jpg"
           alt="Imagem do benchmark realizado para a G Farma"
           className="mx-auto"
         />
@@ -189,12 +189,12 @@ return (
           total na conversão, clareza e experiência mobile-first.
         </p>
         <CustomImage
-          src="/assets/prototipo1.jpg"
+          src="/assets/presentation3sc.jpg"
           alt="Protótipo G Farma"
           className="mx-auto"
         />
         <CustomImage
-          src="/assets/prototipo2.jpg"
+          src="/assets/presentation3sc.jpg"
           alt="Protótipo G Farma"
           className="mx-auto"
         />
@@ -215,7 +215,7 @@ return (
           agilidade nas iterações e escalabilidade para futuras implementações.
         </p>
         <CustomImage
-          src="/assets/designsystemgf.jpg"
+          src="/assets/presentation3sc.jpg"
           alt="Design System G Farma"
           className="mx-auto"
         />
