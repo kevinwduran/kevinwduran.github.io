@@ -1,36 +1,60 @@
 "use client";
 
-import { TbUserCode, TbDeviceLaptop, TbDevices } from "react-icons/tb";
+import { TbAccessible , TbDeviceLaptop, TbDevices, TbLayoutDashboard, TbCode, TbSearch } from "react-icons/tb";
 import Projetos from "../app/projetos/page";
 
 const services = [
   {
     num: "01",
-    title: "UI/UX Design",
-    description: "Desenvolvimento de interfaces intuitivas e agradáveis, focadas na experiência do usuário, maximizando sua usabilidade e satisfação.",
-    icon: <TbUserCode />,
+    title: "Design de Interfaces (UI)",
+    description:
+      "Criação de interfaces modernas, funcionais e visualmente alinhadas com a identidade da marca. Forte foco em hierarquia visual, consistência e atenção aos detalhes.",
+    icon: <TbLayoutDashboard />,
   },
   {
     num: "02",
-    title: "Design de Prototipação",
-    description: "Criação de protótipos interativos de alta fidelidade para validar ideias e melhorar a comunicação com stakeholders.",
-    icon: <TbDeviceLaptop />,
+    title: "Acessibilidade e Inclusão Digital",
+    description:
+      "Projetos que seguem diretrizes WCAG e boas práticas de acessibilidade para garantir experiências inclusivas e compatíveis com tecnologias assistivas.",
+    icon: <TbAccessible  />,
   },
   {
     num: "03",
-    title: "Design Responsivo",
-    description: "Desenvolvimento de layouts adaptáveis para diferentes dispositivos, garantindo uma experiência consistente em desktop, tablet e mobile.",
+    title: "Prototipação de Alta Fidelidade",
+    description:
+      "Protótipos realistas para validar fluxos e funcionalidades com usuários e stakeholders, agilizando decisões e reduzindo retrabalho.",
+    icon: <TbDeviceLaptop />,
+  },
+  {
+    num: "04",
+    title: "Design Responsivo e Mobile-First",
+    description:
+      "Layouts adaptáveis e otimizados para diferentes tamanhos de tela, com foco em usabilidade e performance em dispositivos móveis.",
     icon: <TbDevices />,
   },
+  {
+    num: "05",
+    title: "Visão Técnica de Produto",
+    description:
+      "Minha familiaridade com front-end (HTML, CSS, JS, React) permite entregar soluções realistas, melhroando desenvolvimento.",
+    icon: <TbCode />,
+  },
+  {
+  num: "06",
+  title: "Pesquisa e Experiência do Usuário",
+  description:
+    "Aplicação de métodos de UX Research para entender as necessidades reais do usuário e orientar decisões centradas em valor e eficiência.",
+  icon: <TbSearch />,
+}
 ];
 
 const Services = () => {
   return (
-    <section className="flex flex-col justify-center">
+    <section className="flex flex-col justify-center sm:px-12">
       <div className="container mx-auto">
         <h1 className="text-4xl font-semibold">Serviços</h1>
         <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-24 mt-8 mb-8 items-start justify-center"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-x-16 mt-8 mb-16 items-start justify-center"
         >
           {services.map((service, index) => {
             return (
@@ -50,7 +74,7 @@ const Services = () => {
                   {service.title}
                 </h2>
                 {/* descrição */}
-                <p className="max-w-[18rem]">{service.description}</p>
+                <p className="w-full">{service.description}</p>
                 {/* border */}
                 {/* <div className="border-b border-primary/10 w-full flex"></div> */}
               </div>

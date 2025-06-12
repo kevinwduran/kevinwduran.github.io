@@ -74,7 +74,7 @@ const Hero = () => {
 
             {/* Elementos estáticos abaixo */}
             <div className="mt-12">
-              <p className="text-2xl mb-6">UI / UX Designer</p>
+              <p className="text-2xl mb-6">UI / UX Designer | Product Designer</p>
               
               <div className="flex flex-col xl:flex-row items-center justify-center gap-8">
                 <a href="/assets/Currículo.pdf" download>

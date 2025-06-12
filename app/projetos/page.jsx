@@ -60,7 +60,7 @@ const projects = [
 
 const Projetos = () => {
   return (
-    <section className="min-h-[100vh] flex flex-col justify-center py-12 xl:py-0 sm:px-12">
+    <section className="min-h-[100vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto grid gap-8 xl:py-4">
         {projects.map((project, index) => (
           <div key={index} className="grid xl:grid-cols-2 gap-8 items-center">
