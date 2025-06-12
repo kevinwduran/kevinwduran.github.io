@@ -23,7 +23,7 @@ const solucoes = [
   {
     title: "Checkout reformulado",
     text: "Checkout simplificado, com menos passos, comunicação mais clara e menor fricção no processo de compra.",
-    img: "/assets/presentation3sc.jpg",
+    img: "/assets/checkout.png",
     alt: "Checkout G Farma",
   },
   {
@@ -157,7 +157,7 @@ return (
           pontos fortes e fracos da concorrência.
         </p>
         <CustomImage
-          src="/assets/presentation3sc.jpg"
+          src="/assets/benchmark-galenica.png"
           alt="Imagem do benchmark realizado para a G Farma"
           className="mx-auto"
         />
@@ -194,7 +194,7 @@ return (
           className="mx-auto"
         />
         <CustomImage
-          src="/assets/presentation3sc.jpg"
+          src="/assets/gfarma1.png"
           alt="Protótipo G Farma"
           className="mx-auto"
         />
@@ -203,7 +203,7 @@ return (
           href="https://www.figma.com/proto/seuprojeto"
           className="hover:text-accent-hover transition-colors"
         >
-          Ver Protótipo no Figma
+          {/* Ver Protótipo no Figma */}
         </a>
       </div>
 
@@ -215,7 +215,7 @@ return (
           agilidade nas iterações e escalabilidade para futuras implementações.
         </p>
         <CustomImage
-          src="/assets/presentation3sc.jpg"
+          src="/assets/design-g-farma.png"
           alt="Design System G Farma"
           className="mx-auto"
         />

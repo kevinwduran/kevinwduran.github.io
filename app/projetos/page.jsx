@@ -15,6 +15,16 @@ import Image from "next/image";
 const projects = [
   {
     num: "01",
+    category: "UI/UX Design",
+    title: "E-commerce G Farma",
+    description:
+      "Projeto de novo site para a farmácia G Farma.",
+    stack: ["UI Design", "UCD", "UX Design", "Figma"],
+    image: "/assets/gfarma1.png",
+    live: "/projetos/p4",
+  },
+  {
+    num: "02",
     category: "UX Design",
     title: "Padaria Bom Apetite",
     description:
@@ -22,18 +32,6 @@ const projects = [
     stack: ["Figma", "UX Design", "UCD", "Design Thinking"],
     image: "/assets/Intersect.png",
     live: "/projetos/p1",
-  },
-  {
-    num: "02",
-    icon: <FaGithub />,
-    category: "Design e Programação Web",
-    title: "Meu Portfólio Pessoal",
-    description:
-      "Portfólio pessoal onde consegui colocar em prática os conhecimentos adquiridos de Design e de Programação Web.",
-    stack: ["Next JS", "Tailwind CSS", "Figma", "Illustrator"],
-    image: "/assets/portfolio.png",
-    live: "/projetos/p2",
-    website: "https://github.com/kevinwduran/kevinwduran.github.io",
   },
   {
     num: "03",
@@ -48,13 +46,15 @@ const projects = [
   },
   {
     num: "04",
-    category: "UI/UX Design",
-    title: "E-commerce G Farma",
+    icon: <FaGithub />,
+    category: "Design e Programação Web",
+    title: "Meu Portfólio Pessoal",
     description:
-      "Projeto de novo site para a farmácia G Farma.",
-    stack: ["UI Design", "UCD", "UX Design", "Figma"],
-    image: "/assets/gfarma1.png",
-    live: "/projetos/p4",
+      "Portfólio pessoal onde consegui colocar em prática os conhecimentos adquiridos de Design e de Programação Web.",
+    stack: ["Next JS", "Tailwind CSS", "Figma", "Illustrator"],
+    image: "/assets/portfolio.png",
+    live: "/projetos/p2",
+    website: "https://github.com/kevinwduran/kevinwduran.github.io",
   },
 ];
 
