@@ -5,19 +5,19 @@ const solucoes = [
   {
     title: "Pré-header promocional inteligente",
     text: "Detecta o estado do usuário e mostra as condições de frete grátis, incentivando compras maiores.",
-    img: "/assets/presentation3sc.jpg",
+    img: "/assets/FreteGrátis.webp",
     alt: "Pré-header inteligente",
   },
   {
     title: "Indicação de frete grátis no minicart",
     text: "O cliente vê quanto falta para alcançar o frete grátis diretamente no minicart e no carrinho.",
-    img: "/assets/presentation3sc.jpg",
+    img: "/assets/minicart.webp",
     alt: "Indicação de frete grátis no minicart",
   },
   {
     title: 'Função "Compre Junto"',
     text: "Adicionamos um módulo de compra combinada, estimulando aumento do ticket médio, inspirado na Amazon.",
-    img: "/assets/presentation3sc.jpg",
+    img: "/assets/Compre junto.webp",
     alt: "Compre Junto",
   },
   {
@@ -29,19 +29,19 @@ const solucoes = [
   {
     title: "Página de Produto remodelada",
     text: "Incluímos informações técnicas, vídeos, gráficos de uso, além de um layout mais limpo e persuasivo.",
-    img: "/assets/presentation3sc.jpg",
+    img: "/assets/Single Completa.png",
     alt: "Página de Produto",
   },
   {
     title: "Nova página de parceiros",
     text: "Espaço dedicado aos sócios, como Cariani e Balestrin, além de kits personalizados e conteúdos exclusivos.",
-    img: "/assets/presentation3sc.jpg",
+    img: "/assets/Parceiros.webp",
     alt: "Página de parceiros",
   },
   {
     title: "Navegação e busca aprimoradas",
     text: "Otimizamos menus, filtros e implementamos uma busca inteligente, que sugere produtos relevantes de forma mais eficiente.",
-    img: "/assets/presentation3sc.jpg",
+    img: "/assets/busca.webp",
     alt: "Busca e navegação",
   },
 ];
@@ -189,7 +189,7 @@ return (
           total na conversão, clareza e experiência mobile-first.
         </p>
         <CustomImage
-          src="/assets/presentation3sc.jpg"
+          src="/assets/gfarma2.webp"
           alt="Protótipo G Farma"
           className="mx-auto"
         />

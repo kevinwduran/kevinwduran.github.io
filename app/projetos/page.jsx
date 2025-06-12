@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import React from "react";
@@ -55,7 +53,7 @@ const projects = [
     description:
       "Projeto de novo site para a farmácia G Farma.",
     stack: ["UI Design", "UCD", "UX Design", "Figma"],
-    image: "/assets/apresentação login mobile.jpg",
+    image: "/assets/gfarma1.png",
     live: "/projetos/p4",
   },
 ];
@@ -118,14 +116,15 @@ const Projetos = () => {
               </div>
             </div>
             <div className="w-full flex justify-center">
-              <div className="h-[460px] relative group flex justify-center items-center bg-white rounded-md">
-                <div className="absolute top-0 bottom-0 w-full h-full bg-black/5 rounded-md z-10"></div>
+              <div className="h-[400px] md:h-[460px] w-full relative group flex justify-center items-center bg-white rounded-xl overflow-hidden">
+                <div className="absolute inset-0 bg-black/5 z-10"></div>
                 <Image
                   src={project.image}
-                  width={600}
-                  height={460}
+                  fill
                   className="object-contain"
                   alt={project.title}
+                  quality={100}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
             </div>

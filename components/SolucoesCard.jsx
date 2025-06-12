@@ -6,7 +6,6 @@ import {
   TooltipTrigger,
 } from "../components/ui/tooltip";
 import { useState } from "react";
-import CustomImage from "./CustomImage";
 import { BsPlusLg } from "react-icons/bs";
 
 const SolucoesCard = ({ title, text, img, alt }) => {
@@ -22,16 +21,16 @@ const SolucoesCard = ({ title, text, img, alt }) => {
             <p className="text-sm md:text-base">{text}</p>
           </div>
 
-          {/* Coluna Imagem com botão overlay - CONTAINER PRINCIPAL CORRIGIDO */}
-          <div className="relative flex items-center justify-center h-48 md:h-40 w-full overflow-hidden rounded-lg bg-gray-50">
-            {/* IMAGEM COM TAMANHO CONTROLADO */}
-            <CustomImage
+          {/* Coluna Imagem com botão overlay */}
+          <div className="relative flex items-center justify-center h-48 md:h-40 w-full overflow-hidden rounded-lg bg-gray-50 cursor-zoom-in">
+            {/* Imagem padrão com object-cover */}
+            <img
               src={img}
               alt={alt}
-              className="h-full w-full object-contain"
+              className="h-full w-full object-cover"
             />
 
-            {/* Botão circular plus no canto superior direito da imagem */}
+            {/* Botão circular plus no canto superior direito */}
             <div className="absolute top-2 right-2 z-20">
               <TooltipProvider delayDuration={100}>
                 <Tooltip>
@@ -53,17 +52,19 @@ const SolucoesCard = ({ title, text, img, alt }) => {
         </div>
       </div>
 
-      {/* Overlay modal */}
+      {/* Modal de imagem ampliada */}
       {isOpen && (
         <div
           onClick={() => setIsOpen(false)}
           className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 cursor-pointer"
         >
-          <CustomImage
-            src={img}
-            alt={alt}
-            className="max-h-[90vh] max-w-[90vw] object-contain"
-          />
+          <div onClick={(e) => e.stopPropagation()}>
+            <img
+              src={img}
+              alt={alt}
+              className="max-h-[90vh] max-w-[90vw] object-contain"
+            />
+          </div>
         </div>
       )}
     </>
